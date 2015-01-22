@@ -1,0 +1,17 @@
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+p {
+    orphans: 3;
+    widows: 3;
+	font-size:20px;
+	color:#00cc99;
+	margin-left:20%;
+  }
