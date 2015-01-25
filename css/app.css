@@ -6245,6 +6245,22 @@ tbody.collapse.in {
   width: 80px !important;
 }
 
+.sr_title { 
+	float: left; 
+	width: 100%; 
+	font-size: 46px; 
+	color: #3cb04a;
+	font-weight: 400; 
+	margin-top: 60px;
+}
+
+.sr_title a { 
+	color: #3cb04a; 
+}
+.sr_subtitle { 
+	float: left; 
+	margin-top: 5px; 
+}
 
 /* test 
 p {
