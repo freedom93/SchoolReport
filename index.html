@@ -18,23 +18,26 @@
 	<link href="images/icon.png" rel="shortcut icon">
     
     <title>SchoolReport</title>
-	
+	<!--检测浏览器是否实现了某个feature，检测CSS3和HTML5的某些功能。 -->
     <script src="js/modernizr-2.7.1.min.js"></script>
-  </head>
-  <body class="index" id="to-top">
-	<!-- start sb-search -->
-<div id="sb-search" class="sb-search">
+    </head>
+	
+    <body class="index" id="to-top">
+    <!-- searchBar -->
+    <div id="sb-search" class="sb-search">
 	<form>
-		<input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search">
+		<input class="sb-search-input" id="search" type="text" value="" name="search" placeholder="输入搜索关键词..." >
 		<input class="sb-search-submit" type="submit" value="">
 		<span class="sb-icon-search"></span>
 	</form>
-</div>
-<script src="js/classie.js"></script>
-<script src="js/uisearch.js"></script>
-<script>
+    </div>
+	<!-- 控制搜索框边缘滑动隐藏或显示的js库  -->
+    <script src="js/classie.js"></script>
+    <script src="js/uisearch.js"></script>
+    <script>
 		new UISearch( document.getElementById( 'sb-search' ) );
-</script>
+    </script>
+	<!-- 头部：APP简介 -->
 	<header class="jumbotron" role="banner">
       <div class="container">
 
@@ -71,7 +74,7 @@
       </div> 
 
     </header>
-	
+	<!-- 服务功能 -->
 	<section class="services-section" id="section-1">
 
       <div class="container">
@@ -84,35 +87,35 @@
               <img class="img-services" src="images/service/achievement.png" alt="Achievement">
             </figure>
 
-            <h4>Achievement</h4>
+            <h4>测评报告</h4>
 
             <p>你的每一次测评成果将在这里展现,优秀的证据在这里啦！</p>
 
           </div> 
 
-          <div class="col-md-4 col-services">
+        <div class="col-md-4 col-services">
             
             <figure>
               <img class="img-services" src="images/service/testonline.png" alt="Test Online">
             </figure>
 
-            <h4>Test Online</h4>
+            <h4>在线测评</h4>
 
             <p>想更了解你的优势和强项吗？选择你喜欢的科目在线进行测试吧！</p>
 
-          </div> 
+        </div> 
 
-          <div class="col-md-4 col-services">
+        <div class="col-md-4 col-services">
             
 			<figure>
               <img class="img-services" src="images/service/review.png" alt="Review">
             </figure>
 
-            <h4>Review</h4>
+            <h4>温故知新</h4>
 
             <p>温故知新，回顾你之前做过的题目也会有更多的新收获哦!</p>
        
-          </div>
+        </div>
           
         </div> 
 		
@@ -123,42 +126,41 @@
               <img class="img-services img-margin" src="images/service/friends.png" alt="Friends">
             </figure>
 			
-            <h4>Friends</h4>
+            <h4>朋友们</h4>
 			
             <p>学习不是孤独的旅程，邀请你的好朋友一起学习吧！</p>
            
+        </div> 
 
-          </div> 
-
-          <div class="col-md-4 col-services">
+        <div class="col-md-4 col-services">
             
             <figure>
               <img class="img-services img-margin" src="images/service/search.png" alt="Search">
             </figure>
 
-            <h4>Search</h4>
+            <h4>孤独求败</h4>
 
             <p>自信来自于每次PK的胜利中，所以小伙伴赶紧寻找一位在线朋友PK一下吧!</p>
 
-          </div> 
-		  <div class="col-md-4 col-services">
+        </div> 
+		
+		<div class="col-md-4 col-services">
             <figure>
               <img class="img-services" src="images/service/results.png" alt="Results">
             </figure>
 
-            <h4>Results</h4>
+            <h4>在校成绩单</h4>
 
             <p>以史为鉴是种智慧，快来记录你在学校平时考试的成绩吧！</p>
             
-
-          </div> 
-          
+        </div> 
+		
         </div> 
 		
       </div> 
       
     </section> 
-	
+	<!-- 了解更多  -->
     <section class="features-section" id="section-2">
 
       <div class="container">
@@ -238,7 +240,7 @@
       </div> 
     </section> 
 	
-    <!-- Subscribe -->
+    <!-- 联系我们 -->
     <section class="subscribe-section" id="section-3">
 
       <div class="container">
@@ -254,36 +256,33 @@
 				
           <input type="textarea" class="form-control" id="suggestions" placeholder="在这里尽情倾诉……">
 
-            <!-- Subscribe form -->
             <div class="row">
 
               <div class="col-md-6 col-md-offset-3 col-subscribe">
 
                 <form class="subscribe-form form-inline" action="./index.html" role="form">
 
-                  <!-- Input -->
                   <div class="form-group">
 
                     <input type="email" class="form-control" id="exampleInputEmail1" placeholder="邮箱/手机号">
-                  </div> <!-- /.form-group -->
-
-                  <!-- Button -->
+                  </div> 
+                 
                   <button class="btn btn-success" type="submit">发 送</button>
                   
-                </form> <!-- /.subscribe-form -->
+                </form>
                 
-                
-              </div> <!-- /.col-md-6 -->
+              </div> 
 
-            </div> <!-- /.row -->
+            </div> 
             
-          </div> <!-- /.col-md-12 -->
+          </div> 
           
-        </div> <!-- /.row -->
+        </div>
 
-      </div> <!-- /.container -->
+      </div> 
 
-    </section> <!-- /.subscribe-section -->
+    </section> 
+	<!-- 页脚：APP版权和资源说明信息 -->
 	<footer class="footer-section" role="contentinfo">
 
       <div class="container">
