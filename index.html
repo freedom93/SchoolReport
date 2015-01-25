@@ -20,12 +20,35 @@
     <title>SchoolReport</title>
 	
     <script src="js/modernizr-2.7.1.min.js"></script>
-	
+<script type="text/javascript">$(document).ready(function(){$(".flexy-menu").flexymenu({speed: 400,type: "horizontal",align: "right"});});</script>
+<!--start slider -->
+	<script src="js/responsiveslides.min.js"></script>
+	  <script>
+	    // You can also use "$(window).load(function() {"
+		    $(function () {
+			      // Slideshow 1
+			      $("#slider1").responsiveSlides({
+			        maxwidth: 1600,
+			        speed: 600
+			      });
+			});
+	  </script>	
   </head>
   <body class="index" id="to-top">
-	
+	<!-- start sb-search -->
+<div id="sb-search" class="sb-search">
+	<form>
+		<input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search">
+		<input class="sb-search-submit" type="submit" value="">
+		<span class="sb-icon-search"></span>
+	</form>
+</div>
+<script src="js/classie.js"></script>
+<script src="js/uisearch.js"></script>
+<script>
+		new UISearch( document.getElementById( 'sb-search' ) );
+</script>
 	<header class="jumbotron" role="banner">
-
       <div class="container">
 
         <div class="row">
@@ -226,18 +249,57 @@
         </div>
 
       </div> 
-<!-- title start -->
-  	<div class="container">
-    	<div class="row">
-        	<div class="col-md-6 col-sm-6">
-            	<div class="sr_title"><a href="#">SchoolReport</a></div>
-                <div class="sr_subtitle">Better than better, you and me!  你我岂止更优秀！</div>
-            </div>
-           
-        </div>
-    </div>
-  <!-- title end -->
     </section> 
+	
+    <!-- Subscribe -->
+    <section class="subscribe-section" id="section-3">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-12">
+			<section class="subscribe-description">
+
+                  <p>Better than better, you and me!  你我岂止更优秀！</p>
+                  
+            </section> 
+				
+          <input type="textarea" class="form-control" id="suggestions" placeholder="扎这里尽情倾诉！欢迎向我们反馈更多的宝贵意见……">
+
+            <!-- Subscribe form -->
+            <div class="row">
+
+              <div class="col-md-6 col-md-offset-3 col-subscribe">
+
+                <form class="subscribe-form form-inline" action="./index.html" role="form">
+
+                  <!-- Input -->
+                  <div class="form-group">
+
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="邮箱/手机号">
+                  </div> <!-- /.form-group -->
+
+                  <!-- Button -->
+                  <button class="btn btn-success" type="submit">发 送</button>
+                  
+                </form> <!-- /.subscribe-form -->
+
+
+
+                
+                
+              </div> <!-- /.col-md-6 -->
+
+            </div> <!-- /.row -->
+            
+          </div> <!-- /.col-md-12 -->
+          
+        </div> <!-- /.row -->
+
+      </div> <!-- /.container -->
+
+    </section> <!-- /.subscribe-section -->
 	<footer class="footer-section" role="contentinfo">
 
       <div class="container">

@@ -6085,7 +6085,7 @@ tbody.collapse.in {
 }
 
 .subscribe-section {
-  background: #2e2f41 url(../images/bg-2.png) 0 0 no-repeat;
+  background: #2e2f41 url(../images/bg-1.png) 0 0 no-repeat;
   text-align: center;
   padding: 100px 0;
   background-size: cover;
@@ -6245,22 +6245,91 @@ tbody.collapse.in {
   width: 80px !important;
 }
 
-.sr_title { 
-	float: left; 
-	width: 100%; 
-	font-size: 46px; 
-	color: #3cb04a;
-	font-weight: 400; 
-	margin-top: 60px;
+/*search*/
+.sb-search {
+	position: absolute;
+	top: 2px;
+	right:0px;
+	width: 0%;
+	min-width: 45px;
+	height: 45px;
+	float: right;
+	overflow: hidden;
+	-webkit-transition: width 0.3s;
+	-moz-transition: width 0.3s;
+	transition: width 0.3s;
+	-webkit-backface-visibility: hidden;
+}
+.sb-search-input {
+	position: absolute;
+	top: 0;
+	left: 0px;
+	border: none;
+	outline: none;
+	background: #252525;
+	width: 100%;
+	height: 45px;
+	margin: 0;
+	z-index: 10;
+	padding: 5px 20px;
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	color: #ffffff;
+}
+.sb-search-input::-webkit-input-placeholder {
+	color: #ffffff;
+}
+.sb-search-input:-moz-placeholder {
+	color: #ffffff;
+}
+.sb-search-input::-moz-placeholder {
+	color: #efb480;
+}
+.sb-search-input:-ms-input-placeholder {
+	color: #ffffff;
+}
+.sb-icon-search,.sb-search-submit  {
+	width: 45px;
+	height: 45px;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 0;
+	margin: 0;
+	line-height: 45px;
+	text-align: center;
+	cursor: pointer;
+}
+.sb-search-submit {
+	background: #fff; /* IE needs this */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
+    filter: alpha(opacity=0); /* IE 5-7 */
+    opacity: 0;
+	color: transparent;
+	border: none;
+	outline: none;
+	z-index: -1;
+	-webkit-appearance: none;
+}
+.sb-icon-search {
+	color: #fff;
+	background: #f53300 url('../images/searchicon.png') no-repeat 14px 14px;
+	z-index: 90;
+}
+/* Open */
+.sb-search.sb-search-open,.no-js .sb-search {
+	width: 100%;
+}
+.sb-search.sb-search-open .sb-icon-search,.no-js .sb-search .sb-icon-search {
+	background: #f53300 url('../images/searchicon.png') no-repeat 14px 14px;
+	color: #fff;
+	z-index: 11;
+}
+.sb-search.sb-search-open .sb-search-submit,.no-js .sb-search .sb-search-submit {
+	z-index: 90;
 }
 
-.sr_title a { 
-	color: #3cb04a; 
-}
-.sr_subtitle { 
-	float: left; 
-	margin-top: 5px; 
-}
 
 /* test 
 p {
