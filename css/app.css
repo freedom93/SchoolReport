@@ -6247,7 +6247,7 @@ tbody.collapse.in {
 
 /*search*/
 .sb-search {
-	position: absolute;
+	position: fixed;
 	top: 2px;
 	right:0px;
 	width: 0%;
