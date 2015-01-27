@@ -6340,3 +6340,37 @@ p {
 	margin-left:20%;
   }
   */
+  .side-nav {
+  position: fixed;
+  top: 45%;
+  right: 20px;
+  z-index: 1030;
+}
+@media screen and (max-width: 320px) {
+  .side-nav {
+    display: none;
+  }
+}
+.side-nav ul.nav-side-nav {
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+.side-nav ul.nav-side-nav > li {
+  display: block;
+  line-height: 1.42857;
+  margin: 0;
+  padding: 8px 0;
+}
+.side-nav ul.nav-side-nav > li > a {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #e2e2e2;
+}
+.side-nav ul.nav-side-nav > li > a:hover, .side-nav ul.nav-side-nav > li > a:focus {
+  background: #afafaf;
+  text-decoration: none;
+}
